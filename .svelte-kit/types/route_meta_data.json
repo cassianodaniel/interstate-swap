@@ -1,0 +1,15 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/kitchen-sink": [
+		"src/routes/+layout.js"
+	],
+	"/(app)/permutas": [
+		"src/routes/(app)/permutas/+page.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/permutas/+server.js"
+	]
+}
