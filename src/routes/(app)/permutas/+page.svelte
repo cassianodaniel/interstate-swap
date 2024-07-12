@@ -40,18 +40,16 @@
 					<TableBodyCell>{user.whatsapp}</TableBodyCell>
 					<TableBodyCell>{user.personal_notes}</TableBodyCell>
 					<TableBodyCell>
-						<div class="flex flex-row items-center justify-start">
-							<a
-								href="/app/permutas/{user.id}"
-								class="text-blue-
-						500"
-							>
-								<img src={WhatsappIcon} height="24" width="24" alt="Whatsapp" />
-							</a>
-							<span class="pl-2 text-green-500 underline">
+						<a
+							href={`https://wa.me/${user.whatsapp}`}
+							target="_blank"
+							class="flex flex-row items-center justify-start text-blue-500"
+						>
+							<img src={WhatsappIcon} height="24" width="24" alt="Whatsapp" />
+							<span class="cursor-pointer pl-2 text-green-500 underline">
 								Falar com {user.name}
 							</span>
-						</div>
+						</a>
 					</TableBodyCell>
 				</TableBodyRow>
 			</TableBody>
