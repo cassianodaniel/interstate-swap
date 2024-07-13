@@ -14,7 +14,7 @@
 		"migrate": "edgedb migration create && edgedb migration apply",
 		"setup": "pnpm run install:edgedb && pnpm run install:client && pnpm run build:both && edgedb ui && pnpm run dev",
 		"destroy": "edgedb instance destroy -I permutas --force",
-		"build": "./build.sh && vite build",
+		"build": "./build.sh && edgedb project init --non-interactive && vite build",
 		"preview": "vite preview",
 		"prepublishOnly": "pnpm run package",
 		"lint": "prettier --check . && eslint .",
