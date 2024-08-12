@@ -1,2 +1,15 @@
+edgedb
 /edgedb
 /node_modules
+/.svelte-kit
+.pnpm-debug.log
+.svelte-kit/*
+.vercel/*
+.vercel
+devcontainer.env
+.env
+dist
+build
+package
+tmp
+dbschema/edgeql-js

@@ -1,0 +1,35 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/(app)/cadastrar/email": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/cadastrar/email/+server.js"
+	],
+	"/(app)/cadastrar/senha": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/cadastrar/senha/+server.js"
+	],
+	"/(app)/cadastrar/whatsapp": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/cadastrar/whatsapp/+server.js"
+	],
+	"/(app)/entrar": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/entrar/+server.js"
+	],
+	"/kitchen-sink": [
+		"src/routes/+layout.js"
+	],
+	"/(app)/permutas": [
+		"src/routes/(app)/permutas/+page.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/(app)/permutas/+server.js"
+	]
+}

@@ -320,19 +320,22 @@ export namespace sys {
   export type VersionStage = "dev" | "alpha" | "beta" | "rc" | "final";
 }
 export namespace users {
-  export type military_type = "PM" | "BM";
+  export type Estado = "AC" | "AL" | "AP" | "AM" | "BA" | "CE" | "DF" | "ES" | "GO" | "MA" | "MT" | "MS" | "MG" | "PA" | "PB" | "PR" | "PE" | "PI" | "RJ" | "RN" | "RS" | "RO" | "RR" | "SC" | "SP" | "SE" | "TO";
+  export type Profissao = "PM" | "BM";
   export namespace Users {
+    export interface EstadosDoBrasil extends $default.Timestamped {
+      "sigla"?: users.Estado | null;
+    }
     export interface User extends $default.Timestamped {
-      "current_origin"?: string | null;
-      "current_station"?: string | null;
       "email"?: string | null;
-      "military_type"?: string | null;
-      "name"?: string | null;
-      "next_target"?: string | null;
       "password"?: string | null;
-      "personal_notes"?: string | null;
       "username"?: string | null;
       "whatsapp"?: string | null;
+      "graduacao"?: string | null;
+      "nome"?: string | null;
+      "estados_destino": EstadosDoBrasil[];
+      "profissao"?: users.Profissao | null;
+      "estado_origem"?: EstadosDoBrasil | null;
     }
   }
 }
@@ -446,8 +449,10 @@ export interface types {
     "VersionStage": sys.VersionStage;
   };
   "users": {
-    "military_type": users.military_type;
+    "Estado": users.Estado;
+    "Profissao": users.Profissao;
     "Users": {
+      "EstadosDoBrasil": users.Users.EstadosDoBrasil;
       "User": users.Users.User;
     };
   };
